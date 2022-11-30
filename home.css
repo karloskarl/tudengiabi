@@ -17,6 +17,7 @@ form {
     border-radius: 40px;
     display: flex;
     flex-direction: row;
+    margin-left: 100px
 }
 
 input {
