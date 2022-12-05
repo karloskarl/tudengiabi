@@ -59,26 +59,34 @@ p {
 }
 
 .review {
-    margin-left: 300px;
+    margin-left: 480px;
     margin-top: 50px;
-    width: 700px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    width: 1200px;
 }
 
 img {
     width: 960px;
     height: 640px;
-    margin-left: 540px;
+    margin-left: 560px;
     margin-top: 0px;
 }
 
 .ratings {
-    margin-left: 1500px;
-    margin-top: -300px;
+    text-align: center;
+    margin-left: 730px;
 }
 
 .info {
-    margin-left: 800px;
+    margin-left: 850px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10px;
+}
+
+.kaugus {
+    margin-left: 160px;
+}
+
+.pikk {
+    margin-left: -70px;
 }

@@ -11,48 +11,6 @@ h1 {
     margin-left: 200px;
 }
 
-form {
-    background-color: #1b1b1b;
-    align-items: center;
-    width: 800px;
-    height: 100px;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 640px;
-}
-
-input {
-    all: unset;
-    font: 30px system-ui;
-    color: #919191;
-    height: 100%;
-    width: 100%;
-    padding: 6px 20px;
-}
-
-::placeholder {
-    color: #4e4e4e;
-    opacity: 0.7;
-}
-
-button {
-    all: unset;
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-    margin-right: 20px;
-}
-
-svg {
-    color: #646464;
-    fill: currentColor;
-    width: 44px;
-    height: 44px;
-    vertical-align: middle;
-    margin: 0 auto;
-}
-
 .sidebar {
     height: 100%;
     width: 200px;
@@ -75,4 +33,63 @@ svg {
 
 .sidebar a:hover {
     color:#919191;
+}
+
+.sidebar h3 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #646464;
+    display: block;
+}
+
+p {
+    color: white;
+    text-align: left;
+    margin-left: 540px;
+    width: 1000px;
+    font-size: 20px;
+}
+
+.gif {
+    margin-left: 540px;
+    width: 1000px;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.pilt {
+    width: 1000px;
+    height: 750px;
+    margin-left: 540px;
+    margin-top: 50px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #303030;
 }
