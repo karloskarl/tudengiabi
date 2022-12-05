@@ -3,7 +3,7 @@
 function degreesToRadians(degrees) {
     return degrees * Math.PI / 180;
 }
-  
+//leiab kauguse kahe punkti vahel maakeral kui anda kordinaadid
 function distanceInKmBetweenEarthCoordinates(lat1, lon1, lat2, lon2) {
     var earthRadiusKm = 6371;
   
@@ -21,16 +21,18 @@ function distanceInKmBetweenEarthCoordinates(lat1, lon1, lat2, lon2) {
 
 var kaugus = document.getElementById("kaugus");
 
+//kui brauser ei anna asukohta, ei saa kaugust leida
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
 } else {
     kaugus.innerHTML = "Asukohta ei saa vaadata."
 }
-
+//Kontrollib mis baarist distantsi mõõta
 caller = document.currentScript.getAttribute('caller');
 var x;
 var y;
 if (caller === 'gen') {
+    //kordinaadid Google Mapsist võetud
     x = 58.38347955315079;
     y = 26.72194918252007;
 } else if (caller === 'atso') {
@@ -46,7 +48,7 @@ if (caller === 'gen') {
     x = 58.37949435656203;
     y = 26.722395456307684;
 }
-
+//Paneb teksti htmli
 function showPosition(position) {
     kaugus.innerHTML = "Kaugus - " + distanceInKmBetweenEarthCoordinates(x,y,position.coords.latitude, position.coords.longitude).toFixed(3) + " km";
 }
